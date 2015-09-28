@@ -33,7 +33,7 @@
       collection: {
         type: String
       },
-      model_id: {
+      modelId: {
         type: String
       },
       url: {
@@ -62,7 +62,7 @@
     _compute_url: function () {
       var url;
       if (this.collection && this.model_id) {
-        url = '/api/' + this.collection + '/' + this.model_id;
+        url = '/api/' + this.collection + '/' + this.modelId;
         url = url.replace(/\/\/+/, '/');
         this.url = url;
       }
